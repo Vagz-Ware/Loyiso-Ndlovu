@@ -58,8 +58,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h1  class="display-4 fw-bold" data-aos="fade-up">I am a <span class="text-brand">Web Developer</span> From Johannesburg, South Africa </h1>
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am Loyiso Ndlovu, and I architecht Websites designed to 10x Your revenues </p>
+                        <h1  class="display-5 fw-bold" data-aos="fade-up">I am a <span class="text-brand" id="words">Web Developer</span> From Johannesburg, South Africa </h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am Loyiso Ndlovu, and I develop Websites designed to skyrocket Your revenues </p>
                         <div data-aos="fade-up" data-aos-delay=600>
                         <a href="#work" class="btn btn-brand me-3 explore-work">Explore My Work</a>
                         <!-- <a href="#" class="link-custom">Call: 061 488 0896</a> -->
@@ -421,27 +421,34 @@
                     <h1>Interested In Working Together? Lets Get In Touch!</h1>
                 </div>
                 <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-                    <form action="#" class="row g-lg-3 gy-3">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="row g-lg-3 gy-3">
+                        <input type="hidden" name="access_key" value="90c50adb-51c5-49f7-8f17-953908ec792b">
+
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control"
-                            placeholder="Enter Your Name">
+                            placeholder="Enter Your Name" name = "name">
                         </div>
                         
                         <div class="form-group col-md-6">
                             <input type="email" class="form-control"
-                            placeholder="Enter Your Email">
+                            placeholder="Enter Your Email" name = "email">
                         </div>
                         <div class="form-group col-md-12">
                             <input type="text" class="form-control"
-                            placeholder="Enter Subject">
+                            placeholder="Enter Subject" name = "subject">
                         </div>
                         
                         <div class="form-group col-md-12">
-                            <textarea name="" rows="4" class="form-control"
+                            <textarea name="Message" rows="4" class="form-control"
                             placeholder="Enter Your Message"></textarea>
                         </div>
+                            <!-- hCaptcha Spam Protection -->
+                            <div class="h-captcha" data-captcha="true"></div>
+                            <!-- Required for hCaptcha -->
+                            <script src="https://web3forms.com/client/script.js" async defer></script>
+
                         <div class="form-group col-md-12 d-grid">
-                            <button type="submit" class="btn btn-brand">Contact Me</button>
+                            <button type="submit" class="btn btn-brand" >Contact Me</button>
                         </div>
                     </form>
                 </div>
@@ -482,5 +489,8 @@
         <script src="js/aos.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/main.js"></script>
+        
+        
+
 </body>
 </html>

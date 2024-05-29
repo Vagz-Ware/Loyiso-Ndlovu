@@ -212,3 +212,14 @@ box-shadow: none;
     border-radius: 100px;
     font-size: 24px;
 }
+
+/* Changinng text in the main heading */
+
+#words {
+    transition: opacity 0.5s ease; /* Define transition property for opacity change */
+  }
+  
+  .fadeOut {
+    opacity: 0; /* Set opacity to 0 for fade-out effect */
+  }
+  
